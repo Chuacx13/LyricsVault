@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { UserAuth } from '../utils/auth';
+import { fetchLyrics } from '../utils/fetchLyrics';
 
 const SearchBar = () => {
 
@@ -12,7 +13,7 @@ const SearchBar = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("hi")
+    fetchLyrics(searchTerm);
   };
 
   return (
@@ -22,7 +23,7 @@ const SearchBar = () => {
         value={searchTerm}
         onChange={handleInputChange}
         placeholder="Sign in to use our website"
-        className="border border-gray-800 rounded py-2 px-2 md:w-96 focus:outline-none focus:ring focus:border-blue-300"
+        className="border rounded py-2 px-2 md:w-96 focus:outline-none focus:border-gray-800"
       />
       <button type="submit" className="bg-gray-800 text-white hover:bg-blue-1000 py-2 px-4 rounded" disabled={!user}>
         Search

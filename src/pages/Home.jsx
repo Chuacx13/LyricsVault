@@ -1,6 +1,6 @@
 import React from 'react';
-import lyricsvault_logo from '../assets/lyricsvault_logo.png'
-import SearchBar from '../components/SearchBar'
+import lyricsvault_logo from '../assets/lyricsvault_logo.png';
+import SearchBar from '../components/SearchBar';
 
 function Home() {
   return (
