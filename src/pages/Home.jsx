@@ -8,13 +8,13 @@ function Home() {
 
   const { user } = UserAuth();
   const [searchResults, setSearchResults] = useState(() => {
-    const savedResults = localStorage.getItem('searchResults');
+    const savedResults = sessionStorage.getItem('searchResults');
     return savedResults ? JSON.parse(savedResults) : null;
   });
 
   const handleSearchResults = (results) => {
     setSearchResults(results);
-    localStorage.setItem('searchResults', JSON.stringify(results));
+    sessionStorage.setItem('searchResults', JSON.stringify(results));
   }
 
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { UserAuth } from '../utils/auth';
 import { Tooltip } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
-import { deleteSavedSong } from '../utils/deleteSavedSong';
+import { deleteSavedSong } from '../utils/songAPI';
 
 const DeleteButton = ({ songObject }) => {
 
@@ -12,7 +12,7 @@ const DeleteButton = ({ songObject }) => {
         deleteSavedSong(songObject, user);
     }
   return (
-    <Tooltip title="Save">
+    <Tooltip title="Delete">
         <StarIcon 
         onClick={handleDelete}
         sx={{ 

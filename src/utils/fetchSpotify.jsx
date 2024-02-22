@@ -1,5 +1,5 @@
 import { fetchLyrics } from "./fetchLyrics";
-import { getSavedSong } from "./getSavedSong";
+import { isSongSaved } from "./songAPI";
 
 const url = 'https://spotify23.p.rapidapi.com/search/?q=';
 const options = {
@@ -18,7 +18,7 @@ export async function fetchSpotify(searchTerm, user) {
             const response = await fetch(url+`${song.result.full_title}`, options);
             const result = await response.json();
             const spotifyUri = result.albums.items[0].data.uri;
-            const isSaved = await getSavedSong(spotifyUri, user);
+            const isSaved = await isSongSaved(spotifyUri, user);
             return { ...song, spotifyUri, isSaved }
         })
 

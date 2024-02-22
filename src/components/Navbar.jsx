@@ -11,6 +11,11 @@ const Navbar = () => {
   const navigate = useNavigate(); 
   const isHomePage = location.pathname === '/';
 
+  const handleNavigationToProfile = () => {
+    navigate('/profile');
+    sessionStorage.removeItem('searchResults');
+  }
+
   return (
     <nav className="fixed top-0 w-full bg-gray-800 text-white p-4">
       <div className="md:container md:mx-auto flex justify-between items-center">
@@ -23,7 +28,7 @@ const Navbar = () => {
           (<div className='flex'>
             <button
               className="font-bold text-xl mr-10"
-              onClick={() => navigate('/profile')}>
+              onClick={handleNavigationToProfile}>
               Profile
             </button>
             <Logout/>

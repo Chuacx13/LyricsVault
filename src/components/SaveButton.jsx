@@ -2,7 +2,7 @@ import React from 'react';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import { UserAuth } from '../utils/auth';
 import { Tooltip } from '@mui/material';
-import { postSong } from '../utils/postSong';
+import { postSong } from '../utils/songAPI';
 
 const SaveButton = ({ songObject }) => {
 
