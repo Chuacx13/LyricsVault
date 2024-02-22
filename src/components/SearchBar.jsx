@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { UserAuth } from '../utils/auth';
 import { fetchLyrics } from '../utils/fetchLyrics';
 
-const SearchBar = () => {
+const SearchBar = ({ onSearch }) => {
 
   const { user } = UserAuth();
   const [searchTerm, setSearchTerm] = useState('');
@@ -11,9 +11,17 @@ const SearchBar = () => {
     setSearchTerm(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    fetchLyrics(searchTerm);
+    if (user) {
+      try {
+        const results = await fetchLyrics(searchTerm);
+        console.log(results);
+        onSearch(results);
+      } catch (error) {
+        console.error(error);
+      }
+    }
   };
 
   return (

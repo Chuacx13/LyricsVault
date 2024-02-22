@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <AuthContextProvider>
-        <div className="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
+        <div className="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] min-h-screen">
           <Navbar/>
           <Routes>
             <Route path='/' element={<Home/>}/>

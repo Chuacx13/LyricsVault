@@ -9,6 +9,7 @@ const Logout = () => {
     const handleSignOut = async () => {
       try {
         await signOutOfGoogle();
+        localStorage.removeItem('searchResults');
       } catch (error) {
         console.error(error);
       }

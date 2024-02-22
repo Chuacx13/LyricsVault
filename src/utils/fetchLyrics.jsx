@@ -11,5 +11,5 @@ const options = {
 export async function fetchLyrics(searchTerm) {
 	const response = await fetch(url+`${searchTerm}`, options);
 	const result = await response.json();
-	console.log(result);
+	return result.hits;
 } 
