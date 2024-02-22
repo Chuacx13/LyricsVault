@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { UserAuth } from '../utils/auth';
-import { fetchLyrics } from '../utils/fetchLyrics';
+import { fetchSpotify } from '../utils/fetchSpotify';
 
 const SearchBar = ({ onSearch }) => {
 
@@ -15,8 +15,7 @@ const SearchBar = ({ onSearch }) => {
     event.preventDefault();
     if (user) {
       try {
-        const results = await fetchLyrics(searchTerm);
-        console.log(results);
+        const results = await fetchSpotify(searchTerm);
         onSearch(results);
       } catch (error) {
         console.error(error);

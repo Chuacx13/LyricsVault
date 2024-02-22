@@ -12,7 +12,7 @@ function Profile() {
 
   return (
     <div className="pt-20">
-      <p className="text-xl"> Welcome, 
+      <p className="text-xl font-bold"> Welcome, 
         {user.displayName} 
       </p>
     </div>

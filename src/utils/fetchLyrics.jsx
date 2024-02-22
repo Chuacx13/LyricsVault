@@ -9,7 +9,7 @@ const options = {
 };
 
 export async function fetchLyrics(searchTerm) {
-	const response = await fetch(url+`${searchTerm}`, options);
+	const response = await fetch(url+`${searchTerm}`+'&per_page=12', options);
 	const result = await response.json();
 	return result.hits;
 } 

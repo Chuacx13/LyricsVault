@@ -23,7 +23,7 @@ const Navbar = () => {
         (isHomePage ?
           (<div className='flex'>
             <button
-              className="font-bold text-xl mr-4"
+              className="font-bold text-xl mr-10"
               onClick={() => navigate('/profile')}>
               Profile
             </button>
@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>) :
           (<div className='flex'>
             <button 
-              className="font-bold text-xl mr-4" 
+              className="font-bold text-xl mr-10" 
               onClick={() => navigate('/')}>
               Home
             </button>
