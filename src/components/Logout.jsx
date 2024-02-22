@@ -10,6 +10,7 @@ const Logout = () => {
       try {
         await signOutOfGoogle();
         sessionStorage.removeItem('searchResults');
+        window.location.reload();
       } catch (error) {
         console.error(error);
       }

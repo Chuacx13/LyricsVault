@@ -16,7 +16,6 @@ export async function fetchSpotify(searchTerm, user) {
         const songTitles = await fetchLyrics(searchTerm);
         const fetchPromises = songTitles.map(async (song) => {
             const response = await fetch(url+`${song.result.full_title}`, options);
-            console.log(song.result.full_title);
             const result = await response.json();
             const spotifyUri = result.topResults.items[0].data.uri;
             const isSaved = await isSongSaved(spotifyUri, user);
