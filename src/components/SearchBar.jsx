@@ -15,7 +15,7 @@ const SearchBar = ({ onSearch }) => {
     event.preventDefault();
     if (user) {
       try {
-        const results = await fetchSpotify(searchTerm);
+        const results = await fetchSpotify(searchTerm, user);
         onSearch(results);
       } catch (error) {
         console.error(error);

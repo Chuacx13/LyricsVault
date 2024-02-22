@@ -11,13 +11,15 @@ const SpotifyButton = ({ uri }) => {
   return (
     <Tooltip title="Listen on Spotify"> 
       <MusicNote
-        onClick={handleSpotifyClick}
-        sx={{ 
-          fontSize: 30, 
-          border: "1px solid black",
-          cursor: "pointer",
-          borderRadius: 8
-        }}
+      onClick={handleSpotifyClick}
+      sx={{ 
+        fontSize: 30, 
+        border: "1px solid black",
+        cursor: "pointer",
+        borderRadius: 8,
+        marginRight: 1,
+        marginLeft: 1
+      }}
       />
     </Tooltip>
   )

@@ -9,7 +9,11 @@ const options = {
 };
 
 export async function fetchLyrics(searchTerm) {
-	const response = await fetch(url+`${searchTerm}`+'&per_page=12', options);
-	const result = await response.json();
-	return result.hits;
+	try {
+		const response = await fetch(url+`${searchTerm}`+'&per_page=12', options);
+		const result = await response.json();
+		return result.hits;
+	} catch (error) {
+		console.error(error);
+	}
 } 

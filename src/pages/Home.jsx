@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import lyricsvault_logo from '../assets/lyricsvault_logo.png';
 import SearchBar from '../components/SearchBar';
 import SongCard from '../components/SongCard';
@@ -28,7 +28,7 @@ function Home() {
       <div className="text-center mt-4 text-xl"> No songs found. Try another verse. </div> :
       <div className="mt-4 mx-16 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {searchResults?.map((song, index) => (
-          <SongCard key={index} songImage={song.result.header_image_thumbnail_url} songTitle={song.result.full_title} spotify={song.spotifyUri}/>  
+          <SongCard key={index} songImage={song.result.header_image_thumbnail_url} songTitle={song.result.full_title} spotifyUri={song.spotifyUri} saved={song.isSaved}/>  
         ))}
       </div>}
     </div>

@@ -11,7 +11,6 @@ const Navbar = () => {
   const navigate = useNavigate(); 
   const isHomePage = location.pathname === '/';
 
-
   return (
     <nav className="fixed top-0 w-full bg-gray-800 text-white p-4">
       <div className="md:container md:mx-auto flex justify-between items-center">
