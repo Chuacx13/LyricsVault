@@ -36,6 +36,7 @@ Genius API
 - Used material UI for some of the icons needed
 - Integrated two APIs, namely Spotify (Spotify Integration) and Genius (Lyrics Search)
 - Created REST APIs to check isSongSaved, deleteSavedSong, postSong, getAllSavedSongs
+- Deployed application using Firebase hosting
 
 # Challenges
 
@@ -44,8 +45,8 @@ Genius API
 
 # WishList
 
-- Add a youtube link as well so that non-Spotify users can find their song on youtube instead
-- Review the endpoints of the current Spotify API used else, test out other Spotify APIs. This is as the current Spotify API does not accuratelt match the songs with Genius API. However, the current Spotify API do bring users to the right song on Spotify, albeit not by original singer.
+- Add youtube links as well (via YouTube API) so that non-Spotify users can find their song on youtube instead
+- Review the endpoints of the current Spotify API used else, test out other Spotify APIs. This is as the current Spotify API does not accurately match the songs with Genius API. However, the current Spotify API do bring users to the right song on Spotify, albeit not by the original singer.
 
 # Links to APIs used
 
