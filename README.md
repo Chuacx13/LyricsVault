@@ -1,6 +1,6 @@
 # Short description of the project
 
-LyricsVault aims to address the common challenges of identifying songs heard in noisy environments or sang by cover singers. It utilizes the Genius API to search for song based on input lyrics, solving the issue of not being able to use sound recognition apps like Shazam to identify the song of interest. Displaying the top 8 choices, LyricsVault surpasses Google's lyric search which only shows the most popular song at first glance and might not be what users are looking for. Additionally, integration with the Spotify API enables users to listen to song snippets on their Spotify application at a click of a button. Last but not least, a save/delete button allows users to bookmark/unbookmark songs of interest for future reference, enhancing usability of LyricsVault.
+LyricsVault aims to address the common challenges of identifying songs heard in noisy environments or sang by cover singers. It utilizes the Genius API to search for songs based on input lyrics, solving the issue of not being able to use sound recognition apps like Shazam to identify the song of interest. Displaying the top 8 choices, LyricsVault surpasses Google's lyric search which only shows the most popular song at first glance and might not be what users are looking for. Additionally, integration with the Spotify API enables users to listen to song snippets on their Spotify application at a click of a button. Last but not least, a save/delete button allows users to bookmark/unbookmark songs of interest for future reference, enhancing usability of LyricsVault.
 
 # Website Link
 
@@ -34,6 +34,8 @@ Genius API
   4. Integration with Spotify API
 - Used git for version control
 - Used material UI for some of the icons needed
+- Integrated two APIs, namely Spotify (Spotify Integration) and Genius (Lyrics Search)
+- Created REST APIs to check isSongSaved, deleteSavedSong, postSong, getAllSavedSongs
 
 # Challenges
 
@@ -43,9 +45,9 @@ Genius API
 # WishList
 
 - Add a youtube link as well so that non-Spotify users can find their song on youtube instead
-- Review the endpoints of the current Spotify API used else, test out other Spotify APIs. This is as the current Spotify API does not match the songs accurately with Genius API. However, the current Spotify API do bring users to the right song albeit not by original singer.
+- Review the endpoints of the current Spotify API used else, test out other Spotify APIs. This is as the current Spotify API does not accuratelt match the songs with Genius API. However, the current Spotify API do bring users to the right song on Spotify, albeit not by original singer.
 
-# Links to API used
+# Links to APIs used
 
 https://rapidapi.com/Glavier/api/genius-song-lyrics1  
 https://rapidapi.com/Glavier/api/spotify23
