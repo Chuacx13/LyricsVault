@@ -41,15 +41,15 @@ Genius API
 # Challenges
 
 - Integrating various music APIs into LyricsVault
-  - Analysed the sample output for each API call to understand the request and response format.
+  - Analysed the sample output for each API call to understand the request and response format
 - This project was my first experience using Tailwind CSS
-  - Extensively used the Tailwind CSS ocumentation and leverage on my previous knowledge in traditional CSS to help with the learning curve of Tailwind CSS
+  - Extensively used the Tailwind CSS documentation and leverage on my previous knowledge in traditional CSS to help with the learning curve of Tailwind CSS
 
 # Lessons
 
 - Understood the importance of creating easy to understand and structured documentation
 - Learnt the importance of understanding external documentation and the nuances of working with different response formats
-- Improved on my skills in asynchronous programming and error handling in Javascript
+- Improved on my skills in asynchronous programming
 - Enhanced my knowledge in Tailwind CSS which has sped up my development process
 
 # WishList
