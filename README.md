@@ -40,13 +40,22 @@ Genius API
 
 # Challenges
 
-- Figuring out how to integrate the APIs into LyricsVault
-- First time using Tailwind CSS
+- Integrating various music APIs into LyricsVault
+  - Analysed the sample output for each API call to understand the request and response format.
+- This project was my first experience using Tailwind CSS
+  - Extensively used the Tailwind CSS ocumentation and leverage on my previous knowledge in traditional CSS to help with the learning curve of Tailwind CSS
+
+# Lessons
+
+- Understood the importance of creating easy to understand and structured documentation
+- Learnt the importance of understanding external documentation and the nuances of working with different response formats
+- Improved on my skills in asynchronous programming and error handling in Javascript
+- Enhanced my knowledge in Tailwind CSS which has sped up my development process
 
 # WishList
 
 - Add youtube links as well (via YouTube API) so that non-Spotify users can find their song on youtube instead
-- Review the endpoints of the current Spotify API used else, test out other Spotify APIs. This is as the current Spotify API does not accurately match the songs with Genius API. However, the current Spotify API do bring users to the right song on Spotify, albeit not by the original singer.
+- Test out other Spotify APIs. This is as the current Spotify API does not accurately match the songs with Genius API. However, the current Spotify API do bring users to the right song on Spotify, albeit not by the original singer.
 
 # Links to APIs used
 
